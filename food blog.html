@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Food blog</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.btn{
+    background-color:#800000;
+      border:none;
+     color:white;
+   padding:12px 16px;
+   font-size:16px;
+ 
+}
+
+body{
+background-color:#e07b5f;
+}
+
+
+p{color:#800000;}
+
+</style>
+
+</head>
+<body>
+<h1><center><p>Foodie Bite Review</p></center></h1> 
+<hr>
+<table>
+<tr>
+
+<td><button class="btn"><i class="fa fa-home"><input type="text" placeholder="name"></i></button>
+<td><button class="btn"><i class="fa fa-search"><input type="text" placeholder="E-mail"></i></button>
+
+<td><button type="button" class="btn btn-danger" >Done</button>
+
+</tr>
+</table>
+<br>
+<br>
+
+<hr>
+
+<table>
+
+<tr>
+<td><h2><p>Pinch of salt</p></h2>
+<td><textarea rows="1" cols="100" style="background-color:#e07b5f"></textarea>
+<td><button class="btn"><i class="fa fa-instagram"></i>
+<td><button class="btn"><i class="fa fa-twitter"></i>
+<td><button class="btn"><i class="fa fa-facebook"></i> 
+<td><button class="btn"><i class="fa fa-whatsapp"></i>
+<td><button class="btn"><i class="fa fa-search"><input type="text" placeholder="search.."></i>
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<hr>
+
+<table>
+
+<tr>
+<td><h2><p>Indian food</p></h2>
+<td><h2><p>mexican food</p></h2>
+<td><h2><p>Italian food</p></h2>
+<td><h2><p>Lebenese food</p></h2>
+<td><h2><p>Chinese food</p></h2>
+<td><h2><p>French food</p></h2>
+</tr>
+
+<tr>
+<td><a href="https://en.wikipedia.org/wiki/Indian_cuisine"><img src="indian flag.jpg"></a>
+<td><a href="https://en.wikipedia.org/wiki/Mexican_cuisine"><img src="mexico flag.jpg"></a>
+<td><a href="https://en.wikipedia.org/wiki/Italian_cuisine"><img src="italian flag.jpg"></a>
+<td><a href="https://en.wikipedia.org/wiki/Lebanese_cuisine"><img src="lebenon flag.jpg"></a>
+<td><a href="https://en.wikipedia.org/wiki/Chinese_cuisine"><img src="china flag.jpg"></a>
+<td><a href="https://en.wikipedia.org/wiki/French_cuisine"><img src="french flag .jpg"></a>
+</tr>
+
+</table>
+
+<br>
+<br>
+
+<hr>
+
+<h2><center><p>Give Us Your View Regarding Our Collection</p></center></h2>
+<br>
+<br>
+<center>
+<table>
+
+<center>
+<tr>
+<td><label for="y"><h3><p>How was the food</p></h3></label>
+<td><textarea rows="3" cols="40"></textarea>
+</tr>
+
+<tr>
+<td>
+</tr>
+
+<tr>
+<td><label for="k"><h4><p>Tell us more about service</p></h4></label></td>
+<td><select><option>select</option>
+            <option>Good</option>
+            <option>Excellent</option>
+           <option>Great</option>
+           <option>Average</option>  
+          <option>Poor</option>
+</select>
+      </td>    
+</tr>
+
+<tr>
+<td><button type="button" class="btn btn-danger" id="myBtn">Submit</button>
+</tr>
+
+</table>
+</center>
+<marquee><h3>Click on the above flag to know more about the food!!</h3></marquee>
+<hr>
+
+<div class="toast">
+<div class="toast-header">
+Submit Form
+</div>
+<div class="toast-body">
+Are you sure you want to submit
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+$("#myBtn").click(function(){
+$('.toast').toast('show');
+});
+});
+
+</script>
+
+
+</body>
+</html>
